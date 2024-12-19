@@ -1,0 +1,65 @@
+footer {
+    background-color: #1a1a1a; /* Darker background for a premium feel */
+    color: #fff;
+    padding: 3rem 1rem; /* Increased padding for a more spacious look */
+    text-align: center;
+    border-top: 2px solid #ccc; /* Subtle top border for separation */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Increased gap for better spacing */
+}
+
+.footer-logo h1 {
+    font-size: 2.5rem; /* Larger font size for a more impactful logo */
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Added letter spacing for elegance */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center; /* Center the social icons */
+    gap: 2rem; /* Increased gap for better spacing */
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 2rem; /* Larger icons for better visibility */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f0f0f0; /* Lighter hover color for contrast */
+    transform: scale(1.2); /* Slightly larger scale on hover */
+}
+
+.footer-text p {
+    font-size: 1rem; /* Increased font size for better readability */
+    margin: 0;
+    color: #bbb; /* Lighter text color for a softer look */
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        gap: 1.5rem; /* Adjusted gap for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo h1 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .social-icon {
+        font-size: 1.5rem; /* Adjusted icon size for smaller screens */
+    }
+
+    .footer-text p {
+        font-size: 0.9rem; /* Adjusted text size for smaller screens */
+    }
+}
