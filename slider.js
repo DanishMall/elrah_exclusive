@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function nextSlide() {
         const nextIndex = (currentSlide + 1) % slides.length;
         goToSlide(nextIndex);
+        resetProgressBar(); // Automatically reset progress bar
+        startProgressBar(); // Restart progress bar for the next slide
     }
 
     function prevSlide() {
@@ -77,7 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Reset auto slide timer
     function resetAutoSlide() {
         clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(nextSlide, 5000);
+        autoSlideInterval = setInterval(() => {
+            nextSlide();
+        }, 5000);
     }
 
     // Initialize autoSlide
@@ -118,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 prevSlide();
             }
         }
-        startProgressBar();
         resetAutoSlide();
     });
 });

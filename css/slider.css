@@ -48,10 +48,10 @@
 }
 
 .dot {
-    width: 30px;
-    height: 6px;
+    width: 20px;
+    height: 20px;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 3px;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.4s ease;
 }
@@ -134,4 +134,55 @@
 
 .progress.active {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .slider-section {
+        height: 80vh;
+    }
+
+    .slider-controls {
+        bottom: 20px;
+        padding: 10px 15px;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+
+    .dot.active {
+        width: 20px;
+    }
+
+    .slider-nav {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-section {
+        height: 70vh;
+    }
+
+    .slider-controls {
+        bottom: 15px;
+        gap: 6px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .dot.active {
+        width: 15px;
+    }
+
+    .slider-nav {
+        width: 30px;
+        height: 30px;
+    }
 }

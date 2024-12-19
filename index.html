@@ -86,8 +86,20 @@
         </section>
 
         <section id="products" class="products">
+            <h2>Exclusive Sales</h2>
             <div class="container">
-                <h2>Exclusive Sales</h2>
+                <!-- Scroll Controls -->
+                <button class="scroll-btn scroll-left" aria-label="Scroll left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="scroll-btn scroll-right" aria-label="Scroll right">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                <div class="product-grid-wrapper"></div>
                 <div class="product-grid">
                     <!-- Product 1 -->
                     <a href="https://elrahexclusivemy.com/Product.aspx?sq=c81c2f38-5720-475c-bddc-5580c0b6630d" class="product-card">
@@ -145,15 +157,57 @@
                             </p>
                         </div>
                     </a>
-                    <div class="view-all-container">
-                        <a href="https://elrahexclusivemy.com/Collections.aspx?sq1=Bdy1DGSj0nESzakPcTO8eFIHOCyKZFh69W%2BiVDYnLX5T9u%2BAOeCeO4Q%2FmqA9aZE3" class="view-all-button" >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 25px; height: 25px; margin-right: 10px;"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192 32 192c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512L430 512c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32l-85.6 0L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192l-232.6 0L253.3 35.1zM192 304l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16zm128 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
-                            View All Catalog
-                        </a>
-                    </div>
+
+                    <!-- Product 4 -->
+                    <a href="https://elrahexclusivemy.com/Product.aspx?sq=d7b0d770-894c-467b-b846-f9f0eddedfe8" class="product-card">
+                        <div class="product-badge">Sale</div>
+                        <div class="product-image">
+                            <img src="./images/green_elrah.png" alt="Product 4">
+                            <div class="product-overlay">
+                                <span class="view-button">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>BAJU MELAYU MAGNIFICENT</h3>
+                            <h4>C4 - EMERALD GREEN</h4>
+                            <p class="price">
+                                <span class="original-price">RM 209.00</span>
+                                <span>RM 148.00</span>
+                            </p>
+                        </div>
+                    </a>
+
+                     <!-- Product 5 -->
+                     <a href="https://elrahexclusivemy.com/Product.aspx?sq=5dbb8e3d-cc5b-432b-bdec-02d89f26e69b" class="product-card">
+                        <div class="product-badge">Sale</div>
+                        <div class="product-image">
+                            <img src="./images/pink_elrah.png" alt="Product 5">
+                            <div class="product-overlay">
+                                <span class="view-button">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>BAJU MELAYU MAGNIFICENT</h3>
+                            <h4>C26 - ROSE PINK</h4>
+                            <p class="price">
+                                <span class="original-price">RM 209.00</span>
+                                <span>RM 148.00</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="scroll-indicator">
+                    Scroll ← & → or use arrows to see more products
                 </div>
             </div>
-        </section>        
+            <div class="view-all-container">
+                <a href="https://elrahexclusivemy.com/Collections.aspx?sq1=Bdy1DGSj0nESzakPcTO8eFIHOCyKZFh69W%2BiVDYnLX5T9u%2BAOeCeO4Q%2FmqA9aZE3" class="view-all-button" >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 25px; height: 25px; margin-right: 10px;"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192 32 192c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512L430 512c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32l-85.6 0L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192l-232.6 0L253.3 35.1zM192 304l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16zm128 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+                    View All Catalog
+                </a>
+            </div>
+        </section>         
 
         <section id="about" class="about">
             <div class="container">
@@ -192,7 +246,7 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div>
             <div class="footer-content">
                 <div class="footer-logo">
                     <h1>Agent Elrah.</h1>
@@ -201,7 +255,7 @@
                     <a href="https://web.whatsapp.com" target="_blank" class="social-icon" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a href="https://www.tiktok.com" target="_blank" class="social-icon" aria-label="TikTok">
+                    <a href="https://www.tiktok.com/@shamazuah" target="_blank" class="social-icon" aria-label="TikTok">
                         <i class="fab fa-tiktok"></i>
                     </a>
                     <a href="https://elrahexclusivemy.com/?" target="_blank" class="social-icon" aria-label="Chrome">
@@ -215,7 +269,8 @@
         </div>
     </footer>    
 
-    <script src="script.js"></script>
-    <script src="slider.js"></script>
+    <script src="./script.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./product.js"></script>
 </body>
 </html>
